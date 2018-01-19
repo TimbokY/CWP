@@ -1,2 +1,2 @@
-Git is a version control system.
-Git is free software.
+本项目用ionic/angularJs搭建前台，thinkPHP写的后台以及接口。
+下载使用请自行搭建环境。
