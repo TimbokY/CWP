@@ -1,0 +1,67 @@
+<include file="Public:header"/>
+<script src="__ADMIN__/js/jquery-1.4.2.min.js"></script>
+<div class="aright">
+    <!--<div class="arz submitBtn" style="float: left;margin: 0px 20px 20px 30px;"><a href="{:U('Comment/add')}"><i class="layui-icon">&#xe608;</i>添加评论</a></div>-->
+
+    <div style="float: left;margin: 0px 20px 20px 30px;">
+        <form class="layui-form" action="index.html" method="get">
+            <input placeholder="输入关键字" name="kw" value="<?php echo I('kw');?>" type="text" class="layui-input" style="float: left;margin-right: 10px;width: 300px;">
+            <button class="layui-btn submitBtn" style="float: left;" value="查询" type="submit">查询</button>
+        </form>
+    </div>
+
+    <form method="post" class="aform cl" action="{:U('Comment/deletes')}">
+        <table width="100%">
+            <tr>
+                <th width="5%" align="center"><input type="checkbox" name="checkbox" id="selall" /></th>
+                <th width="5%" align="center">评论编号</th>
+                <th width="5%" align="center">动态编号</th>
+                <th width="30%" align="center">评论内容</th>
+                <th width="10%" align="center">评论时间</th>
+                <th width="5%" align="center">评论者</th>
+                <th width="10%" align="center">基本操作</th>
+            </tr>
+            <volist name="list" id="vo">
+                <tr>
+                    <td align="center"><input type="checkbox" class="selall" name="deletes[]" value="{$vo.dyncommentid}" /></td>
+                    <td align="center">{$vo.dyncommentid}</td>
+                    <td align="center">{$vo.dynid}</td>
+                    <td align="center">{$vo.dyncomcontent}</a></td>
+
+
+                    <!--<td align="center"><if condition="$vo[open] eq 0"><span style="color:#FF5722;">待审核</span><else />显示</if></td>-->
+                    <td align="center">{$vo.dyncomcreatedate}</td>
+                    <td align="center">{$vo.userid}</td>
+                    <td align="center"><a class="layui-btn layui-btn-mini layui-btn-danger" href="{:U('Comment/delete',array('dyncommentid'=>$vo['dyncommentid']))}" onclick="return confirm('您确定要删除吗？');">删除</a>
+                    </td>
+                </tr>
+            </volist>
+        </table>
+        <div class="layui-form-item">
+            <div style="margin-top: 20px;">
+                <button class="layui-btn submitBtn" onclick="return confirm('您确定要删除吗？');" type="submit">删除选中</button>
+                <a class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</a>            </div>
+        </div>
+    </form>
+    <div class="pages">
+        {$page}
+    </div>
+</div>
+
+</div>
+</div>
+<script>
+    $("#selall").click(function(){
+        if($(this).attr("checked")){
+            $(".selall").attr("checked","checked");
+        }else{
+            $(".selall").removeAttr("checked");
+        }
+
+    })
+</script>
+</body>
+</html>
+
+
+

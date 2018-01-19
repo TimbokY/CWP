@@ -1,0 +1,32 @@
+<include file="Public:header"/>
+<div class="aright">
+
+<div class="arz cl"><a href="{:U('Announce/add')}"><i class="layui-icon">&#xe608;</i>添加公告</a></div>
+<form method="post" class="aform cl">
+<table width="100%">
+<tr>
+<th width="10%" align="center">公告编号</th>
+<th width="20%" align="center">公告图片</th>
+<th width="20%" align="center">添加时间</th>
+<th width="20%" align="center">基本操作</th>
+</tr>
+<foreach name="c" item="vo" key="k">
+<tr>
+<td align="center">{$vo.annid}</td>
+
+<td align="center"><if condition="$vo['annpic'] neq ''"><img src="__ROOT__/Uploads{$vo.annpic}" height="30"><else />暂无图片</if></td>
+<td align="center">{$vo.anncreatedate}</td>
+<td align="center">
+<a class="layui-btn layui-btn-mini layui-btn-normal" href="{:U('Announce/edit',array('annid'=>$vo['annid']))}">修改</a><a class="layui-btn layui-btn-mini layui-btn-danger" href="{:U('Announce/delete',array('annid'=>$vo['annid']))}" onclick="return confirm('您确定删除吗？');">删除</a>
+</td>
+</tr>
+</foreach>
+</table>
+</form> 
+</div>
+</div>
+</body>
+</html>
+
+
+

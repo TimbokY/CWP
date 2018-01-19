@@ -1,0 +1,18 @@
+
+<ion-content>
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh(0)"></ion-refresher>
+    <div class="list" ng-repeat="likeMy in likesMy" ng-if="likeMy.othernickname!=''">
+        <div class="row" style="height: auto;width: 100%;border-bottom: solid; border-bottom-color:#EEEEEE;padding: 8px">
+            <div class="col col-20" style=" height:50px;width:50px;margin-top:8px">
+                <img style="border-radius:20%;width: 52px;height: 50px" data-ng-src="../../../CWP/admin/Uploads{{likeMy.otherheadpic}}"></div>
+            <div class="col col-50" style="display:block;height:auto;margin-left: 10px">
+                <div style="color: #FF5500;">{{likeMy.othernickname}}</div>
+                <p style=" margin-top: 0px;margin-bottom: 0px">{{likeMy.otherdate.substring(5,16)}}</p>
+                <p style="margin-bottom: 0px">赞了这条动态</p>
+            </div>
+            <div class="col col-20" style="height:80px;width: 80px; overflow:scroll; ">
+                <p>{{likeMy.mineword}}</p>
+            </div>
+        </div>
+    </div>
+</ion-content>

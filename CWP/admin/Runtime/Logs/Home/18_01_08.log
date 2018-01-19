@@ -1,0 +1,1712 @@
+[ 2018-01-08T08:53:58+08:00 ] ::1 /CWP/admin/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.018385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015881s ]
+
+[ 2018-01-08T08:54:02+08:00 ] ::1 /CWP/admin/admin.php/Home/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000409s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `cwp_user` WHERE ( userName='1' AND userPwd='1' AND userType = 1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `cwp_user` SET `userLastLoginTime`='2018-01-08 08:54:02' WHERE ( userId=1 ) [ RunTime:0.0595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002111s ]
+
+[ 2018-01-08T08:54:04+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2018-01-08T08:54:04+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2018-01-08T08:54:06+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2018-01-08T08:54:14+08:00 ] ::1 /CWP/admin/admin.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `cwp_dyncomment` [ RunTime:0.0380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_dyncomment` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_dyncomment` ORDER BY dynComCreateDate DESC LIMIT 0,15   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2018-01-08T08:54:16+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2018-01-08T08:54:27+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/applydelete/appid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0117s ]
+SQL: DELETE FROM `cwp_apply` WHERE `appid` = 4 [ RunTime:0.1033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2018-01-08T08:54:28+08:00 ] ::1 /CWP/admin/admin.php/Home/Apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-01-08T08:55:58+08:00 ] ::1 /CWP/admin/admin.php/Home/Apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.6390s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2018-01-08T08:56:00+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2018-01-08T08:56:01+08:00 ] ::1 /CWP/admin/admin.php/Home/Announce/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `cwp_announce` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `cwp_announce` ORDER BY annId ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-01-08T08:56:02+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-01-08T08:56:27+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2018-01-08T08:56:28+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-01-08T08:56:29+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2018-01-08T08:56:29+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-01-08T08:56:29+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2018-01-08T08:56:30+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001602s ]
+
+[ 2018-01-08T08:56:30+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2018-01-08T08:56:30+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2018-01-08T08:57:40+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:1.4373s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001615s ]
+
+[ 2018-01-08T08:57:41+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2018-01-08T08:57:41+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2018-01-08T08:57:42+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2018-01-08T08:57:42+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2018-01-08T08:57:42+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2018-01-08T08:57:43+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2018-01-08T08:57:43+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2018-01-08T08:57:43+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2018-01-08T08:57:43+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2018-01-08T08:58:31+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2018-01-08T08:58:32+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-01-08T08:58:32+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-01-08T08:58:32+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2018-01-08T08:58:33+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-01-08T08:58:33+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2018-01-08T08:58:34+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2018-01-08T08:58:34+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2018-01-08T08:58:35+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2018-01-08T08:58:35+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2018-01-08T08:58:35+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-01-08T08:58:36+08:00 ] ::1 /CWP/admin/admin.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `cwp_dyncomment` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_dyncomment` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_dyncomment` ORDER BY dynComCreateDate DESC LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Use of undefined constant open - assumed 'open' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+NOTIC: [8] Undefined index: open E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\e7009202080fbd37ca8dd2a9ae1a45fe.php 第 69 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2018-01-08T08:58:43+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2018-01-08T09:01:13+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2018-01-08T09:01:14+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001091s ]
+
+[ 2018-01-08T09:01:15+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-01-08T09:01:15+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2018-01-08T09:01:16+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2018-01-08T09:01:16+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-01-08T09:01:16+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2018-01-08T09:01:16+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2018-01-08T09:01:17+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-01-08T09:01:17+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2018-01-08T09:01:17+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2018-01-08T09:01:18+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2018-01-08T09:01:18+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2018-01-08T09:01:46+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2018-01-08T09:01:47+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-01-08T09:01:48+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-01-08T09:01:48+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-01-08T09:01:49+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2018-01-08T09:01:49+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2018-01-08T09:01:49+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2018-01-08T09:01:49+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2018-01-08T09:02:01+08:00 ] ::1 /CWP/admin/admin.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_user` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_user` ORDER BY userid ASC LIMIT 0,7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2018-01-08T09:02:05+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_dynamic` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_dynamic` ORDER BY dynId DESC LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2018-01-08T09:02:07+08:00 ] ::1 /CWP/admin/admin.php/Home/Announce/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `cwp_announce` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cwp_announce` ORDER BY annId ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2018-01-08T09:02:10+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2018-01-08T16:17:20+08:00 ] ::1 /CWP/admin/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001823s ]
+
+[ 2018-01-08T16:17:53+08:00 ] ::1 /CWP/admin/admin.php/Home/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cwp_user` WHERE ( userName='1' AND userPwd='1' AND userType = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cwp_user` SET `userLastLoginTime`='2018-01-08 16:17:52' WHERE ( userId=1 ) [ RunTime:1.1189s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000392s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001655s ]
+
+[ 2018-01-08T16:17:54+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2018-01-08T16:17:54+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+

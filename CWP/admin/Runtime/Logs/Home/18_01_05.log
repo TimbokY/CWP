@@ -1,0 +1,145 @@
+[ 2018-01-05T10:32:45+08:00 ] ::1 /CWP/admin/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.007226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015659s ]
+
+[ 2018-01-05T10:32:51+08:00 ] ::1 /CWP/admin/admin.php/Home/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `cwp_user` WHERE ( userName='1' AND userPwd='1' AND userType = 1 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `cwp_user` SET `userLastLoginTime`='2018-01-05 10:32:51' WHERE ( userId=1 ) [ RunTime:0.0504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002074s ]
+
+[ 2018-01-05T10:32:52+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+
+[ 2018-01-05T10:32:52+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2018-01-05T10:32:59+08:00 ] ::1 /CWP/admin/admin.php/Home/runtime/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2018-01-05T10:34:10+08:00 ] ::1 /CWP/admin/admin.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_user` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_user` ORDER BY userid ASC LIMIT 0,7   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 71 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 73 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 78 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 71 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 73 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 78 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 71 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 73 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 78 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 71 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 73 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 78 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 71 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 73 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 78 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 71 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 73 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+

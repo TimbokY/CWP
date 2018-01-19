@@ -1,0 +1,15 @@
+<ion-header-bar class="bar bar-positive">
+    <button class="button button-clear backBtn" ng-click="goBack()"><img src="img/back.png"></button>
+    <h1 class="title">校园公告</h1>
+</ion-header-bar>
+<ion-content>
+    <div style="height: 14em;width: 100%">
+        <img style="width: 100%;height: 100%" src="../admin/Uploads{{ann.annpic}}"/>
+    </div>
+    <div style="width: 100%;height: 20em;padding: 5px;margin-top: 10px;height: auto;text-indent: 2em;">
+        <p>{{ann.anncontent}}</p>
+    </div>
+    <div style="position: absolute;right: 3%">
+        <p>{{ann.anncreatedate.substring(2,16)}}</p>
+    </div>
+</ion-content>

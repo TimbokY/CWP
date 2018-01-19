@@ -1,0 +1,75 @@
+<include file="Public:header"/>
+<script src="__ADMIN__/js/jquery-1.4.2.min.js"></script>
+<div class="aright">
+    <div class="arz" style="float: left;margin: 0px 20px 20px 30px;"><a href="{:U('User/add')}"><i class="layui-icon">&#xe608;</i>添加账号</a></div>
+
+    <div style="float: left;">
+        <form class="layui-form" action="http://localhost/Demo/CWP/admin/admin.php/Home/User/index.html" method="get">
+            <input placeholder="输入账号" name="kw" value="<?php echo I('kw');?>" type="text" class="layui-input" style="float: left;margin-right: 10px;width: 300px;">
+            <button class="layui-btn layui-btn submitBtn" style="float: left;" value="查询" type="submit">查询</button>
+        </form>
+    </div>
+
+    <form method="post" class="aform cl" action="{:U('User/deletes')}">
+        <table width="100%">
+            <tr>
+                <th width="5%"><input type="checkbox" name="checkbox" id="selall" /></th>
+                <th width="5%">ID</th>
+                <th width="10%">账号</th>
+                <th width="10%">密码</th>
+                <th width="5%">账号类型</th>
+                <th width="10%">头像</th>
+                <th width="5%">昵称</th>
+                <th width="5%">性别</th>
+                <th width="15%">注册日期</th>
+                <th width="15%">最后登录时间</th>
+                <th width="10%">基本操作</th>
+
+            </tr>
+            <volist name="list" id="vo">
+                <tr>
+                    <td><input type="checkbox" class="selall" name="deletes[]" value="{$vo.userid}" /></td>
+                    <td>{$vo.userid}</td>
+                    <td><span class="overFlow">{$vo.username}</span></td>
+                    <td>{$vo.userpwd}</td>
+                    <td><if condition="$vo[usertype] eq 1"><button class="layui-btn layui-btn-mini layui-btn-radius layui-btn-warm">管理员</button><else /><button class="layui-btn layui-btn-mini layui-btn-radius layui-btn-primary">普通用户</button></if></td>
+                    <td>
+                        <if condition="$vo[userpic] neq ''">
+                            <img src="__ROOT__/Uploads{$vo.userpic}" height="30">
+                            <else />
+                            暂无缩略图
+                        </if>
+                    </td>
+                    <td>{$vo.usernickname}</td>
+                    <td><if condition="$vo[usersex] eq 1"><span>男</span><else /><span>女</span></if></td>
+                    <td>{$vo.userbirth}</td>
+                    <td>{$vo.userlastlogintime}</td>
+                    <td align="center"><a class="layui-btn layui-btn-mini layui-btn-normal" href="{:U('User/edit',array('id'=>$vo['userid']))}">修改</a><a class="layui-btn layui-btn-mini layui-btn-danger" href="{:U('User/delete',array('id'=>$vo['userid']))}" onclick="return confirm('您确定要删除吗？');">删除</a>
+                    </td>
+                </tr>
+            </volist>
+        </table>
+        <div class="layui-form-item">
+            <div style="margin-top: 20px;">
+                <button class="layui-btn submitBtn" onclick="return confirm('您确定要删除吗？');" type="submit">删除选中</button>
+                <!--<a class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</a>-->
+            </div>
+        </div>
+    </form>
+    <div class="pages">
+        {$page}
+    </div>
+</div>
+</div>
+<script>
+    $("#selall").click(function(){
+        if($(this).attr("checked")){
+            $(".selall").attr("checked","checked");
+        }else{
+            $(".selall").removeAttr("checked");
+        }
+
+    })
+</script>
+</body>
+</html>

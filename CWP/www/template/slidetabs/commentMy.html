@@ -1,0 +1,22 @@
+
+<ion-content>
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh(0)"></ion-refresher>
+    <div class="list"  ng-repeat="commentMy in commentsMy" >
+        <div class="row" style="height: auto;width: 100%;border-bottom: solid; border-bottom-color:#EEEEEE;padding: 8px" ng-if="commentMy.otherword!=''">
+            <div class="col col-20" style=" height:50px;width:50px;padding: 0" ng-click="showMyComMyDynamic($index)">
+                <img style="border-radius:20%;width: 52px;height: 50px" data-ng-src="../../../CWP/admin/Uploads{{commentMy.otherheadpic}}"></div>
+            <div class="col col-40" style="display:block;height:auto;margin-left: 10px" ng-click="showMyComMyDynamic($index)">
+                <div style="color: #FF5500;">{{commentMy.othernickname}}</div>
+                <p style=" margin-top: 0px;margin-bottom: 0px">{{commentMy.otherword}}</p>
+                <p style="margin-bottom: 0px">{{commentMy.otherdate.substring(5,16)}}</p>
+            </div>
+            <div class="col col-30" style="height:80px;width: 80px; overflow:scroll;" ng-click="showMyComMyDynamic($index)">
+                <p>{{commentMy.mineword}}</p>
+            </div>
+            <div class="col col-10" ng-click="deleteComMy($index)">
+               <div style="margin-left: 1em"><i class="icon ion-close"></i></div>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

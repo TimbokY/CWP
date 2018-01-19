@@ -1,0 +1,50 @@
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+    <button class="button button-clear backBtn" ng-click="goback()"><img src="img/back.png"></button>
+    <div class="title">动态详情</div>
+</ion-header-bar>
+<ion-content style="background-color: #FAFAFA">
+    <div class="list dongtai" ng-repeat="item  in mydynamics" ng-click="getobjId(item.dynid)">
+        <div class=" hudongbottom row">
+            <div>
+                <div class="touxiang col col-35" ng-click="goOtherCenter()">
+                    <img data-ng-src="../../CWP/admin/Uploads{{item.headpic}}">
+                </div>
+            </div>
+            <div class="yonghuming col col-50" style="display: block">
+                <div class="#" style="font-size: large;color: #FF5500;margin-bottom: 5%">{{item.nickname}}</div>
+                <div class="">{{item.date}}</div>
+            </div>
+            <div class="col col-15" style="text-align: center" ng-if="item.userid == nowUserId">
+                <!--<button class="button button-small button-assertive"style="float:right;" ng-click="delete(item.dynid)">删除</button>-->
+                <p style="float:right; color: #EF473A;font-size: 20px" ng-click="delete(item.dynid)"><i class="icon ion-ios-trash-outline"></i></p>
+            </div>
+        </div>
+        <div class=" miaoshu" ng-click="showOtherUserDynamic($index)">
+            <b>{{item.word}}</b>
+        </div>
+        <div ng-if="item.pic!=''" class=" shiportupian">
+            <img data-ng-src="../../CWP/admin/Uploads{{item.pic}}">
+        </div>
+        <div ng-if="item.pic==''" >
+        </div>
+
+        <div class=" dibu row">
+            <div class="tubiao col " ng-click="changeLike(item.dynid,$event,item.islike)">
+                <div class="dianzan" ng-if="item.islike!=''"></div>
+                <div class="daidianzan"ng-if="item.islike==''"></div>
+            </div>
+            <div class="shuliang col">{{item.dynlikecount}}</div>
+
+            <div class="tubiao1 col" ng-click="showOtherUserDynamic($index)">
+                <div class="zhuanfa"></div>
+            </div>
+            <div class="shuliang col">{{item.dyncomcount}}</div>
+
+            <div class="tubiao2 col" ng-click="changeHate(item.dynid,$event,item.ishate)">
+                <div class="cai" ng-if="item.ishate!=''"></div>
+                <div class="daicai"ng-if="item.ishate==''"></div>
+            </div>
+            <div class="shuliang col">{{item.dynhatecount}}</div>
+        </div>
+    </div>
+</ion-content>

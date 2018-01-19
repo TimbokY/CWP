@@ -1,0 +1,63 @@
+<include file="Public:header"/>
+<script src="__ADMIN__/js/jquery-1.4.2.min.js"></script>
+<div class="aright">
+    <!--<div class="arz submitBtn" style="float: left;margin: 0px 20px 20px 30px;"><a href="{:U('Comment/add')}"><i class="layui-icon">&#xe608;</i>添加评论</a></div>-->
+
+    <div style="float: left;margin: 0px 20px 20px 30px;">
+        <form class="layui-form" action="{:U('Apply/chaxun')}" method="get">
+            <input placeholder="输入关键字" name="keyword"  type="text" class="layui-input" style="float: left;margin-right: 10px;width: 300px;">
+            <button class="layui-btn submitBtn" style="float: left;" value="查询" type="submit">查询</button>
+        </form>
+    </div>
+
+
+        <table width="100%" class="aform cl">
+            <tr>
+
+                <th width="5%" align="center">反馈标号</th>
+                <th width="5%" align="center">关键字</th>
+                <th width="20%" align="center">反馈详情</th>
+                <th width="10%" align="center">反馈时间</th>
+                <th width="5%" align="center">联系方式</th>
+                <th width="5%">操作</th>
+            </tr>
+            <foreach name="c" item="vo" key="k">
+                <tr>
+
+                    <td align="center"height="30">{$vo.appid}</td>
+                    <td align="center">{$vo.applytype}</a></td>
+                    <td align="center">{$vo.applycontent}</td>
+                    <td align="center">{$vo.applytime}</td>
+                    <td align="center">{$vo.applynumber}</td>
+                    <td align="center"><a class="layui-btn layui-btn-mini layui-btn-danger" href="{:U('apply/applydelete',array('appid'=>$vo['appid']))}" onclick="return confirm('您确定要删除吗？');">删除</a>
+                    </td>
+                </tr>
+            </foreach>
+        </table>
+        <div class="layui-form-item">
+            <div style="float:right;margin-top: 20px;">
+                <a class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</a>            </div>
+        </div>
+
+    <div class="pages">
+        {$page}
+    </div>
+</div>
+
+</div>
+</div>
+<script>
+    $("#selall").click(function(){
+        if($(this).attr("checked")){
+            $(".selall").attr("checked","checked");
+        }else{
+            $(".selall").removeAttr("checked");
+        }
+
+    })
+</script>
+</body>
+</html>
+
+
+

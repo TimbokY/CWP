@@ -1,0 +1,9 @@
+<div class="hatelist" ng-repeat="hateList in hateLists" >
+    <div class="list" ng-click="showHateThisUser(hateList.userid)">
+        <a class="item item-avatar" href="#" >
+            <img data-ng-src="../admin/Uploads{{hateList.userpic}}">
+            <h2>{{hateList.usernickname}}</h2>
+            <div >{{hateList['dynhatecreatedate'].substring(2)}}</div>
+        </a>
+    </div>
+</div>

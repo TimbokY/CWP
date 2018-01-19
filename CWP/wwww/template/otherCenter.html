@@ -1,0 +1,55 @@
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+    <button class="button button-clear backBtn" ng-click="goMyDynamic()"><img src="img/back.png"></button>
+    <h1 class="title">基本信息</h1>
+</ion-header-bar>
+<ion-content class="personalCenterPage">
+    <div class="personImg {{skin}}-bg">
+        <div class="overflow-hidden padding"></div>
+        <div class="text-center padding">
+            <form id="editPic">
+                <div class="avatar">
+                    <img data-ng-src="../admin/Uploads{{list.userpic}}">
+                </div>
+            </form>
+            <h4 ng-if="skin!='light'" class="light">{{list.usernickname}}</h4>
+            <h4 ng-if="skin=='light'">{{list.usernickname}}</h4>
+        </div>
+    </div>
+    <div class="list">
+        <label class="item item-input">
+            <span class="input-label">账号</span>
+            <input value="{{list.username}}" type="text" readonly>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">昵称</span>
+            <input value="{{list.usernickname}}" type="text" readonly>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">个性签名</span>
+            <input value="{{list.userinfo}}" type="text" readonly>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">性别</span>
+            <input ng-if="list.usersex==1" value="男" type="text" readonly>
+            <input ng-if="list.usersex==0" value="女" type="text" readonly>
+        </label>
+        <!--<label class="item item-input">
+            <span class="input-label">背景图片</span>
+            <input ng-model="$parent.userBgPic" type="text">
+        </label>-->
+        <label class="item item-input">
+            <span class="input-label">地区</span>
+            <input ng-if="list.userhomeplace!=''" value="{{list.userhomeplace}}" type="text" readonly>
+            <input ng-if="list.userhomeplace==''" value="四海为家" type="text" readonly>
+        </label>
+        <!--<input ng-model="$parent.userHomePace" type="text">-->
+        <label class="item item-input">
+            <span class="input-label">生日</span>
+            <input value="{{list.userbirth}}" type="text" readonly>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">学校</span>
+            <input value="{{list.userschool}}" type="text" readonly>
+        </label>
+    </div>
+</ion-content>

@@ -1,0 +1,13 @@
+<div class="commentlist" ng-repeat="comment in comments">
+    <div class="row" ng-click="showComThisUser(comment.userid)">
+        <div class="colimg col col-20" >
+            <img data-ng-src="../admin/Uploads{{comment.userpic}}">
+        </div>
+        <div class="col col-80 col-com" >
+            <div>{{comment['usernickname']}}</div>
+            <div class="col-dyncom">{{comment['dyncomcontent']}}
+            </div>
+            <div style="margin-top: 1em">{{comment['dyncomcreatedate'].substring(2)}}</div>
+        </div>
+    </div>
+    </div>

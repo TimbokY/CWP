@@ -1,0 +1,33 @@
+<ion-header-bar class="bar">
+    <button class="button button-clear backBtn" ng-click="goLogin()"><img src="img/back.png"></button>
+    <h1 class="title">注册新用户</h1>
+</ion-header-bar>
+<ion-content class="registerPage">
+    <div class="list padding">
+        <p>
+            <img src="img/camera_48px.ico">
+            <span>校园随拍</span>
+        </p>
+        <div class="item item-input">
+            <i class="inputText">用户名:</i>
+            <input ng-model="$parent.userName" type="text" placeholder="6-12位数字和字母" />
+            <i class="icon ion-close-circled placeholder-icon" ng-click="dismissOne()" ng-if="$parent.userName.length"></i>
+        </div>
+        <div class="item item-input">
+            <i class="inputText">密&nbsp;&nbsp;&nbsp;码:</i>
+            <input ng-model="$parent.userPwd" id="RegPasswordId" type="password" placeholder="6-12位数字和字母" />
+            <i class="icon ion-eye placeholder-icon padding-right" ng-click="showPwd()"></i>
+            <i class="icon ion-close-circled placeholder-icon" ng-click="dismissTwo()"  ng-if="$parent.userPwd.length"></i>
+        </div>
+        <div class="item item-list">
+            <div id="slider"></div>
+            <div style="display: none">验证结果：<span id="result"></span></div>
+        </div>
+        <div class="">
+            <button class="button button-calm button-outline button-block" ng-click="registerBtn()">注册</button>
+        </div>
+    </div>
+    <div class="padding">
+        <p id="bottom">注册即代表阅读并同意<span>《服务条款》</span></p>
+    </div>
+</ion-content>

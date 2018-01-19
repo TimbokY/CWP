@@ -1,0 +1,128 @@
+<ion-view>
+<ion-side-menus>
+    <ion-side-menu-content>
+        <ion-header-bar class="bar-{{skin}} bar bar-header">
+            <button class="button button-icon ion-navicon-round" ng-click="toggleLeft()"></button>
+            <h1 class="title">动态</h1>
+        </ion-header-bar>
+        <ion-content style="background-color: #FAFAFA">
+            <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+            <ion-slide-box active-slide="activeSlide" auto-play="true" does-continue="true" slide-interval="3000" show-pager="true">
+                <ion-slide ng-repeat="ann in anns">
+                    <div>
+                        <img ng-click="tiaozhuan($index)" data-ng-src="../admin/Uploads/{{ann.annpic}}">
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+            <p style="text-align: right;padding-right: 5px;margin-bottom: 1px;margin-top: 1px">
+                <button id="time" class="button button-small active" ng-click="changeSortByTime()">时间排序</button>
+                <button id="like" class="button button-small" ng-click="changeSortBylike()">热度排序</button>
+            </p>
+
+            <div class="list dongtai" ng-repeat="item  in dynamics" ng-click="getobjId(item.dynid)">
+                <div class=" hudongbottom row">
+                    <div>
+                        <div class="touxiang" ng-click="goOtherDynamic(item.userid)">
+                            <img data-ng-src="../admin/Uploads{{item.headpic}}"></div>
+                        </div>
+                    <div class="yonghuming" style="display: block">
+                        <div class="#" style="font-size: large;color: #FF5500;margin-bottom: 5%">{{item.nickname}}</div>
+                        <div class="">{{item.date}}</div>
+                    </div>
+                </div>
+                <div class=" miaoshu" ng-click="dynmicInfo($index)">
+                    <p>{{item.word}}</p>
+                </div>
+                <div ng-if="item.pic!=''" class=" shiportupian" ng-click="goSeeImg($index)">
+                    <img data-ng-src="../admin/Uploads/{{item.pic}}">
+                </div>
+                <div ng-if="item.pic==''" >
+                </div>
+
+                <div class=" dibu row">
+                    <div class="tubiao col "  ng-click="changeLike(item.dynid,$event,item.islike)">
+                        <div class="dianzan"ng-if="item.islike!=''"></div>
+                        <div class="daidianzan"ng-if="item.islike==''"></div>
+                    </div>
+                    <div class="shuliang col">{{item.dynlikecount}}</div>
+
+                    <div class="tubiao1 col" ng-click="doComment($index)">
+                        <div class="zhuanfa"></div>
+                    </div>
+                    <div class="shuliang col">{{item.dyncomcount}}</div>
+
+                    <div class="tubiao2 col" ng-click="changeHate(item.dynid,$event,item.ishate)">
+                        <div class="cai" ng-if="item.ishate!=''"></div>
+                        <div class="daicai"ng-if="item.ishate==''"></div>
+                    </div>
+                    <div class="shuliang col">{{item.dynhatecount}}</div>
+                </div>
+            </div>
+
+        </ion-content>
+        <ion-footer-bar class="tabFooter">
+            <div class="top row">
+                <span class="col-33" style="color: #0c60ee"><i class="icon ion-ios-home-outline"></i></span>
+                <span class="col-33" style="color: #7A7A7A" ng-click="goAddDynamic()"><i class="icon ion-ios-plus"></i></span>
+                <span class="col-33" style="color: #7A7A7A" ng-click="goMine()"><i class="icon ion-ios-email"></i></span>
+            </div>
+            <div class="bottom row">
+                <span class="col-33" style="color: #0c60ee">动态</span>
+                <span class="col-33" style="color: #7A7A7A" ng-click="goAddDynamic()">添加</span>
+                <span class="col-33" style="color: #7A7A7A" ng-click="goMine()">消息</span>
+            </div>
+        </ion-footer-bar>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-content scroll="false" class="personSideMenu">
+            <div class="personImg {{skin}}-bg">
+                <div class="overflow-hidden padding" style="padding-bottom: 50px;"></div>
+                <div class="text-center padding">
+                    <div class="avatar">
+                        <img data-ng-src="../admin/Uploads{{list.userpic}}" ng-click="doEdit()">
+                    </div>
+                    <h4 ng-if="skin!='light'" class="light">{{list.usernickname}}</h4>
+                    <h4 ng-if="skin=='light'">{{list.usernickname}}</h4>
+                    <p ng-if="skin!='light'" class="lightWhite"><span>个性签名:</span>
+                       <span ng-if="list.userinfo==list.userinfo">{{list.userinfo}}</span>
+                        <span ng-if="list.userinfo==''">这家伙很懒，什么都没留下！</span>
+                    </p>
+                    <p ng-if="skin=='light'" class="lightBlack"><span>个性签名:</span>
+                        <span ng-if="list.userinfo==list.userinfo">{{list.userinfo}}</span>
+                        <span ng-if="list.userinfo==''">这家伙很懒，什么都没留下！</span>
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <a class="item item-icon-left" ng-click="goOtherDynamic(nowUserId)">
+                    <i class="icon ion-ios-email-outline"></i>
+                    <p>我的动态</p>
+                </a>
+                <a class="item item-icon-left">
+                    <i class="icon ion-ios-calendar-outline"></i>
+                    <p>每日签到</p>
+                </a>
+                <a class="item item-icon-left" ng-click="doEdit()">
+                    <i class="icon ion-ios-compose-outline"></i>
+                    <p>编辑资料</p>
+                </a>
+                <a class="item item-icon-left" ng-click="goChangeSkin()">
+                    <i class="icon ion-ios-moon-outline"></i>
+                    <p>切换皮肤</p>
+                </a>
+                <a class="item item-icon-left" ng-click="goSetUp()">
+                    <i class="icon ion-ios-gear-outline"></i>
+                    <p>设置</p>
+                </a>
+                <a class="item item-icon-left" ng-click="goAboutApp()">
+                    <i class="icon ion-ios-information-outline"></i>
+                    <p>关于我们</p>
+                </a>
+            </div>
+        <!--<ion-footer-bar class="bar-assertive">
+            <div class="title" ng-click="loginOut()">退出</div>
+        </ion-footer-bar>-->
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+</ion-view>

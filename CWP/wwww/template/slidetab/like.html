@@ -1,0 +1,9 @@
+<div class="likelist" ng-repeat="likeList in likeLists">
+    <div class="list" ng-click="showLikeThisUser(likeList.userid)">
+        <a class="item item-avatar" href="#">
+            <img data-ng-src="../admin/Uploads{{likeList.userpic}}">
+            <h2>{{likeList.usernickname}}</h2>
+            <div >{{likeList['dynlikecreatedate'].substring(2)}}</div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<style>
+ion-content{
+    background-color: #F5F5F5
+}
+    textarea {
+        font-family: "Times New Roman", Georgia, Serif;
+        width: 100%;
+        height: 200px;
+        border-bottom: solid;
+        border-bottom-color: #EEEEEE;
+        resize: none;
+    }
+</style>
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+    <button class="button button-clear backBtn" ng-click="fankuiback()"><img src="img/back.png"></button>
+    <h1 class="title">意见反馈</h1>
+    <p class="fasong" style="width:30px;position: absolute;right: 2%;height: 100%;" ng-click="fasong()">发送</p>
+</ion-header-bar>
+
+<ion-content>
+
+    <textarea  placeholder="请输入问题……"class="wenben"></textarea>
+    <div class="item item-input item-select xuanze" style="margin-top: 20px">
+        <div class="input-label">
+            关键字
+        </div>
+        <select>
+            <option>卡顿</option>
+            <option selected="">黑屏</option>
+            <option>登录慢</option>
+            <option>其他</option>
+        </select>
+    </div>
+    <label class="item item-input"style="margin-top: 20px;">
+      联系电话 :<input  class="num" type="text" placeholder="便于我们联系你"style="display:inline; margin-left: 5px">
+    </label>
+</ion-content>

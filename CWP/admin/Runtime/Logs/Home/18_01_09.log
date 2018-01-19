@@ -1,0 +1,588 @@
+[ 2018-01-09T09:08:15+08:00 ] ::1 /CWP/admin/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.007093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015683s ]
+
+[ 2018-01-09T09:08:26+08:00 ] ::1 /CWP/admin/admin.php/Home/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0305s ]
+SQL: SELECT * FROM `cwp_user` WHERE ( userName='1' AND userPwd='1' AND userType = 1 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: UPDATE `cwp_user` SET `userLastLoginTime`='2018-01-09 09:08:25' WHERE ( userId=1 ) [ RunTime:0.0892s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000479s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000670s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008953s ]
+
+[ 2018-01-09T09:08:27+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001880s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001978s ]
+
+[ 2018-01-09T09:08:29+08:00 ] ::1 /CWP/admin/admin.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_user` LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_user` ORDER BY userid ASC LIMIT 0,7   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002237s ]
+
+[ 2018-01-09T09:08:33+08:00 ] ::1 /CWP/admin/admin.php/Home/User/delete/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0123s ]
+ERR: 1451:Cannot delete or update a parent row: a foreign key constraint fails (`cwp`.`cwp_dynlike`, CONSTRAINT `cwp_dynlike_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `cwp_user` (`userId`) ON DELETE NO ACTION ON UPDATE CASCADE)
+ [ SQL语句 ] : DELETE FROM `cwp_user` WHERE `userId` = 2
+ERR: 1451:Cannot delete or update a parent row: a foreign key constraint fails (`cwp`.`cwp_dynlike`, CONSTRAINT `cwp_dynlike_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `cwp_user` (`userId`) ON DELETE NO ACTION ON UPDATE CASCADE)
+ [ SQL语句 ] : DELETE FROM `cwp_user` WHERE `userId` = 2
+
+[ 2018-01-09T09:54:04+08:00 ] ::1 /CWP/admin/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003985s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2018-01-09T09:54:11+08:00 ] ::1 /CWP/admin/admin.php/Home/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `cwp_user` WHERE ( userName='1' AND userPwd='1' AND userType = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `cwp_user` SET `userLastLoginTime`='2018-01-09 09:54:11' WHERE ( userId=1 ) [ RunTime:0.0814s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000569s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000770s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004022s ]
+
+[ 2018-01-09T09:54:12+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2018-01-09T09:54:12+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2018-01-09T09:54:16+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_dynamic` LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_dynamic` ORDER BY dynId DESC LIMIT 0,15   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002698s ]
+
+[ 2018-01-09T09:54:58+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_dynamic` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_dynamic` ORDER BY dynId DESC LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2018-01-09T09:54:59+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=2 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='1' WHERE ( dynId=2 ) [ RunTime:0.0807s ]
+
+[ 2018-01-09T09:55:02+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0752s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=48 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='0' WHERE ( dynId=48 ) [ RunTime:0.0605s ]
+
+[ 2018-01-09T10:18:11+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001947s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_dynamic` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_dynamic` ORDER BY dynId DESC LIMIT 0,15   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002414s ]
+
+[ 2018-01-09T10:18:12+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=48 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='1' WHERE ( dynId=48 ) [ RunTime:0.1063s ]
+
+[ 2018-01-09T10:18:13+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='1' WHERE ( dynId=3 ) [ RunTime:0.0893s ]
+
+[ 2018-01-09T10:22:45+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=48 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='0' WHERE ( dynId=48 ) [ RunTime:0.1007s ]
+
+[ 2018-01-09T17:35:42+08:00 ] ::1 /CWP/admin/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001994s ]
+
+[ 2018-01-09T17:35:49+08:00 ] ::1 /CWP/admin/admin.php/Home/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002874s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `cwp_user` WHERE ( userName='1' AND userPwd='1' AND userType = 1 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `cwp_user` SET `userLastLoginTime`='2018-01-09 17:35:49' WHERE ( userId=1 ) [ RunTime:0.0652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003553s ]
+
+[ 2018-01-09T17:35:50+08:00 ] ::1 /CWP/admin/admin.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000527s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002583s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001757s ]
+
+[ 2018-01-09T17:35:52+08:00 ] ::1 /CWP/admin/admin.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `cwp_user` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_user` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_user` ORDER BY userid ASC LIMIT 0,7   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+NOTIC: [8] Use of undefined constant usertype - assumed 'usertype' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 72 行.
+NOTIC: [8] Use of undefined constant userpic - assumed 'userpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 74 行.
+NOTIC: [8] Use of undefined constant usersex - assumed 'usersex' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\d133c0f2b95298c4e1dfaedafa39a0b7.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2018-01-09T17:35:54+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cwp_dynamic` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\CWP\admin\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `cwp_dynamic` ORDER BY dynId DESC LIMIT 0,15   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+NOTIC: [8] Use of undefined constant dynpic - assumed 'dynpic' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 71 行.
+NOTIC: [8] Use of undefined constant dynvideo - assumed 'dynvideo' E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\6a13e923142cbf0c2c2b4a6aba6b486e.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2018-01-09T17:36:08+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=60 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='0' WHERE ( dynId=60 ) [ RunTime:0.0985s ]
+
+[ 2018-01-09T17:36:10+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=60 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='1' WHERE ( dynId=60 ) [ RunTime:0.0426s ]
+
+[ 2018-01-09T17:36:11+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=62 ) LIMIT 1   [ RunTime:0.0222s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='0' WHERE ( dynId=62 ) [ RunTime:0.0396s ]
+
+[ 2018-01-09T17:36:24+08:00 ] ::1 /CWP/admin/admin.php/Home/Dynamic/changeshows
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `cwp_dynamic` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cwp_dynamic` WHERE ( dynId=62 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `cwp_dynamic` SET `dynStatus`='1' WHERE ( dynId=62 ) [ RunTime:0.0623s ]
+
+[ 2018-01-09T17:36:41+08:00 ] ::1 /CWP/admin/admin.php/Home/apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `cwp_apply` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `cwp_apply` ORDER BY appid ASC  [ RunTime:0.0217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: page E:\xampp\htdocs\CWP\admin\Runtime\Cache\Home\c38a068b425f0d394107131aa872de9f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2018-01-09T17:36:47+08:00 ] ::1 /CWP/admin/admin.php/Home/Announce/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `cwp_announce` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `cwp_announce` ORDER BY annId ASC  [ RunTime:0.0212s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002952s ]
+

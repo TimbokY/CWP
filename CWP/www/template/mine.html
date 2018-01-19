@@ -1,0 +1,33 @@
+<ion-view>
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+        <div class="title">我的消息</div>
+    </ion-header-bar>
+    <ion-content scroll="false">
+        <div class="row">
+            <ul class="slide-tab">
+                <li class="col col-25" ng-class="slideIndex == $index ? 'current col-25':'col-25'" ng-repeat="item in initSlideTabs.data">
+                    <a ng-click="activeSlide($index)" ng-bind="item.name"></a>
+                </li>
+            </ul>
+        </div>
+        <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex"
+                       does-continue="{{initSlideTabs.doesContinue}}" show-pager="{{initSlideTabs.showPager}}">
+            <ion-slide ng-repeat="item in initSlideTabs.data">
+                <div ng-include="item.tpl" class="padding">
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+     <ion-footer-bar class="tabFooter">
+         <div class="top row">
+             <span class="col-33" style="color: #7A7A7A" ng-click="goDynamic()"><i class="icon ion-ios-home-outline"></i></span>
+             <span class="col-33" style="color: #7A7A7A" ng-click="goAddDynamic()"><i class="icon ion-ios-plus"></i></span>
+             <span class="col-33" style="color: #0c60ee"><i class="icon ion-ios-email"></i></span>
+         </div>
+         <div class="bottom row">
+             <span class="col-33" style="color: #7A7A7A" ng-click="goDynamic()">动态</span>
+             <span class="col-33" style="color: #7A7A7A" ng-click="goAddDynamic()">添加</span>
+             <span class="col-33" style="color: #0c60ee">消息</span>
+         </div>
+     </ion-footer-bar>
+</ion-view>

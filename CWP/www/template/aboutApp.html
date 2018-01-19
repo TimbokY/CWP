@@ -1,0 +1,26 @@
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+    <button class="button button-clear backBtn" ng-click="goPersonSideMenu()"><img src="img/back.png"></button>
+    <h1 class="title">关于我们</h1>
+</ion-header-bar>
+<ion-content class="aboutAppPage">
+    <div class="list">
+        <p>
+            <img src="img/camera_48px.ico">
+            <span>校园随拍</span>
+        </p>
+
+        <a class="item item-list" href="#">
+            版本<h2 style="float:right;margin-right: 1px;display: inline;color: gray">v1.0.0</h2>
+        </a>
+        <a class="item item-list" href="#">
+            功能介绍<div class="ion-chevron-right"style="display: inline;float: right;color: lightgray"></div>
+        </a>
+        <a class="item item-list"ng-click="gofankui()" href="#">
+            反馈<div class="ion-chevron-right"style="display: inline;float: right;color: lightgray"></div>
+        </a>
+    </div>
+
+</ion-content>
+<ion-footer-bar><div style="margin: 0 auto;">
+    <a>官网</a><div style="color: #0c60ee;display: inline;margin-right: 5px;margin-left: 5px">|</div><a>服务条款</a>
+</div></ion-footer-bar>

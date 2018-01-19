@@ -1,0 +1,25 @@
+<ion-content class="loginPage">
+    <!--<input type="text" style="border:0px;background:rgba(0, 0, 0, 0.1); ">-->
+    <div class="list">
+        <p>
+            <img src="img/camera_48px.ico">
+            <span>校园随拍</span>
+        </p>
+        <div class="item item-input" style="border-top-width: 0px;" >
+            <i class="icon ion-ios-person placeholder-icon"></i>
+            <input ng-model="$parent.userName" type="text" placeholder="用户名">
+        </div>
+        <div class="item item-input">
+            <i class="icon ion-ios-locked placeholder-icon"></i>
+            <input ng-model="$parent.userPwd" id="loginPasswordId" type="password" placeholder="密码">
+            <i class="icon ion-eye placeholder-icon padding-right" ng-click="showPwd()"></i>
+        </div>
+        <div class="loginButton">
+            <div class="button button-calm button-block" ng-click="loginBtn()">登录</div>
+        </div>
+        <div class="row">
+            <a class="col col-30 calm" ng-click="goRegister()">免费注册</a>
+            <a class="col col-30 col-offset-40 dark">忘记密码?</a>
+        </div>
+    </div>
+</ion-content>

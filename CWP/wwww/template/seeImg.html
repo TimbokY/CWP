@@ -1,0 +1,13 @@
+<ion-header-bar class="bar bar-dark">
+    <button class="button button-clear backBtn" ng-click="goDynamic()"><img src="img/back.png"></button>
+    <h1 class="title">查看图片</h1>
+</ion-header-bar>
+<ion-content class="seeImgPage">
+    <div ng-click="goDynamic()">
+    <img data-ng-src="../admin/Uploads/{{pic.pic}}">
+    </div>
+</ion-content>
+<ion-footer-bar class="bar bar-dark">
+    <img style="width: 30px;height: 30px;border-radius: 50%;padding-left: 0px;margin-left: 20px;" data-ng-src="../admin/Uploads/{{pic.headpic}}">
+    <span style="padding-top: 7px;border-left-width: 5px;margin-left: 5px;">{{pic.nickname}}</span>
+</ion-footer-bar>

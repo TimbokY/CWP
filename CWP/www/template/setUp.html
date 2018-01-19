@@ -1,0 +1,51 @@
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+    <button class="button button-clear backBtn" ng-click="goPersonSideMenu()"><img src="img/back.png"></button>
+    <h1 class="title">设置</h1>
+</ion-header-bar>
+<ion-content>
+    <div class="list">
+
+        <div class="item item-divider">
+            消息设置
+        </div>
+
+        <ion-toggle toggle-class="toggle-{{skin}}">
+            声音
+        </ion-toggle>
+
+        <ion-toggle toggle-class="toggle-{{skin}}">
+            震动
+        </ion-toggle>
+        <div class="item range">
+            <i class="icon ion-volume-low"></i>
+            <input type="range" name="volume">
+            <i class="icon ion-volume-high"></i>
+        </div>
+
+        <div class="item range range-positive">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volume" min="0" max="100" value="33">
+                <i class="icon ion-ios-sunny"></i>
+        </div>
+        <div class="item item-divider">
+            系统设置
+        </div>
+        <a class="item item-icon-right">
+            <span>清除缓存</span>
+            <span class="item-note">7.51M</span>
+            <i style="color: grey" class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right">
+            <span>隐私</span>
+            <i style="color: grey" class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right">
+            <span>通用</span>
+            <i style="color: grey" class="icon ion-ios-arrow-right"></i>
+        </a>
+    </div>
+</ion-content>
+
+<ion-footer-bar class="bar-{{skin}} bar bar-footer">
+    <div class="title" ng-click="loginOut()">退出</div>
+</ion-footer-bar>

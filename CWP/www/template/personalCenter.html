@@ -1,0 +1,58 @@
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+    <button class="button button-clear backBtn" onclick="$('#personSubmit').click();"><img src="img/back.png"></button>
+    <h1 class="title">个人中心</h1>
+</ion-header-bar>
+<ion-content class="personalCenterPage">
+    <div class="personImg {{skin}}-bg">
+        <div class="overflow-hidden padding"></div>
+        <div class="text-center padding">
+            <form id="editPic">
+            <div class="avatar" id="preview">
+                <!--<img data-ng-src="../admin/Uploads{{list.userpic}}" ng-click="selectImg()">-->
+                <img id="imghead" src="../admin/Uploads{{list.userpic}}" onclick="$('#previewImg').click();">
+            </div>
+            <input type="file" name="userPic" onchange="previewImage(this)" style="display: none;" id="previewImg">
+            <input type="submit" style="display: none;" id="personSubmit" ng-click="goPersonSideMenu()">
+            <input type="hidden" name="userId" value="{{list.userid}}" style="display: none;">
+            </form>
+            <h4 ng-if="skin!='light'" class="light">{{userNickName}}</h4>
+            <h4 ng-if="skin=='light'">{{userNickName}}</h4>
+        </div>
+    </div>
+    <div class="list">
+        <label class="item item-input">
+            <span class="input-label">账号</span>
+            <input ng-model="$parent.userName" type="text" readonly>
+        </label>
+        <label class="item item-input">
+            <span class="input-label">昵称</span>
+            <input ng-model="$parent.userNickName" type="text" ng-blur="saveUser()">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">个性签名</span>
+            <input ng-model="$parent.userInfo" type="text" ng-blur="saveUser()">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">性别</span>
+            <input ng-model="$parent.userSex" type="text" ng-blur="saveUser()">
+        </label>
+        <!--<label class="item item-input">
+            <span class="input-label">背景图片</span>
+            <input ng-model="$parent.userBgPic" type="text">
+        </label>-->
+        <ionic-city-picker options='vm.CityPickData'></ionic-city-picker>
+            <!--<input ng-model="$parent.userHomePace" type="text">-->
+        <label class="item item-input">
+            <span class="input-label">生日</span>
+            <input ng-model="$parent.userBirth" type="text" ng-blur="saveUser()">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">学校</span>
+            <input ng-model="$parent.userSchool" type="text" ng-blur="saveUser()">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">上次登录时间</span>
+            <input ng-model="$parent.userLastLoginTime" type="text" readonly>
+        </label>
+    </div>
+</ion-content>

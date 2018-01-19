@@ -1,0 +1,42 @@
+<ion-header-bar class="bar-{{skin}} bar bar-header">
+    <button class="button button-clear backBtn" ng-click="back(dynamics.dynid)"><img src="img/back.png"></button>
+    <h1 class="title">评论</h1>
+</ion-header-bar>
+<ion-view view-title="Slide Tab">
+    <ion-content >
+        <div class="dongtai">
+            <div class=" hudongbottom row">
+                <div>
+                    <div class="touxiang">
+                        <img data-ng-src="../admin/Uploads{{mydynamics.headpic}}"></div>
+                </div>
+                <div class="yonghuming" style="display: block">
+                    <div class="#" style="font-size: large;color: red;margin-bottom: 5%">{{mydynamics.nickname}}</div>
+                    <div class="">{{mydynamics.date}}</div>
+                </div>
+            </div>
+            <div class=" miaoshu">
+                <p>{{mydynamics.word}}
+                </p>
+            </div>
+            <div ng-if="mydynamics.pic!=''" class=" shiportupian">
+                <img data-ng-src="../admin/Uploads{{mydynamics.pic}}">
+            </div>
+            <div ng-if="mydynamics.pic==''" >
+            </div>
+        </div>
+
+        <div>
+            <ul class="slide-tab">
+                <li ng-class="slideIndex == $index ? 'current col-25':'col-25'" ng-repeat="item in initSlideTabs.data"><a class="CS" ng-click="activeSlide($index)" ng-bind="item.name"></a></li>
+            </ul> <!-- / tabs -->
+        </div>
+        <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex"  does-continue="{{initSlideTabs.doesContinue}}" show-pager="{{initSlideTabs.showPager}}">
+            <ion-slide ng-repeat="item in initSlideTabs.data">
+                <div ng-include="item.tpl" class="padding">
+
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+</ion-view>

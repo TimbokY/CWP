@@ -1,0 +1,41 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="__ADMIN__/wangEditor/css/wangEditor.min.css">
+<script type="text/javascript" src="__ADMIN__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__ADMIN__/wangEditor/js/wangEditor.min.js"></script>
+<div class="aright">
+    <fieldset class="layui-elem-field layui-field-title" style="margin: 20px 30px 20px 20px;">
+        <legend>添加账号</legend>
+    </fieldset>
+
+    <form class="layui-form bform" method="post" action="{:U('User/doadd')}" enctype="multipart/form-data">
+
+
+        <div class="layui-form-item"style="width: 400px;">
+            <label class="layui-form-label">账号</label>
+            <div class="layui-input-block">
+                <input type="text" name="userName" required lay-verify="required" placeholder="请使用6-12位数字和字母的组合" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item" style="width: 400px;">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+                <input type="password" name="userPwd" required lay-verify="required" placeholder="请使用6-12位数字和字母的组合" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn submitBtn" lay-submit lay-filter="formDemo">立即提交</button>
+                <a class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</a>
+            </div>
+        </div>
+    </form>
+    <script>
+        layui.use('form', function(){
+            var form = layui.form();
+        });
+    </script>
+</div>
+</div>
+</body>
+</html>
